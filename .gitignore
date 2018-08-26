@@ -24,3 +24,4 @@ Vagrantfile.local
 /examples/prod/bootstrap/vars.yml
 /scripts/
 /drupal/
+/vendor/
