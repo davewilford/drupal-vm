@@ -15,7 +15,7 @@ vagrant_gui: false
 
 # If you need to run multiple instances of Drupal VM, set a unique hostname,
 # machine name, and IP address for each instance.
-vagrant_hostname: mtbbeds.vm 
+vagrant_hostname: mtbbeds.dev
 vagrant_machine_name: mtbbeds 
 vagrant_ip: 192.168.88.88
 
@@ -50,7 +50,7 @@ drupalvm_vagrant_version_min: '1.8.6'
 drupalvm_ansible_version_min: '2.4'
 
 # Force use of ansible_local provisioner, even if Ansible is installed on host.
-force_ansible_local: false
+force_ansible_local: true
 
 # The web server software to use. Can be either 'apache' or 'nginx'.
 drupalvm_webserver: apache
@@ -75,7 +75,7 @@ drupal_composer_dependencies:
 # Set this to 'true' and 'drupal_build_makefile', 'drupal_build_composer' to 'false'
 # if you are using Composer's create-project as a site deployment strategy.
 drupal_build_composer_project: true
-drupal_composer_project_package: "drupal-composer/drupal-project:8.x-dev"
+drupal_composer_project_package: "drupal-composer/drupal-project:8.3.7"
 drupal_composer_project_options: "--prefer-dist --stability dev --no-interaction"
 
 # Set this to 'false' if you don't need to install drupal (using the drupal_*
